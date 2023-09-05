@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Selection</title>
+    <link rel="stylesheet" type="text/css" href="gender.css">
+</head>
+<body>
+    <div class="gender-container">
+    <h2>Select Your Gender</h2>
+    <div class="gender-options">
+        <div class="gender-card" onclick="handleGenderClick('male')">
+            <img src="male.jpeg" alt="Male" />
+            <p>Male</p>
+        </div>
+        <div class="gender-card" onclick="handleGenderClick('female')">
+            <img src="female.jpeg" alt="Female" />
+            <p>Female</p>
+        </div>
+    </div>
+    <a href="#" class="btn btn-primary" onclick="handleContinue()">Continue</a>
+</div>
+
+
+
+    <script>
+        // JavaScript code (equivalent to React logic) should be placed here
+        let selectedGender = '';
+
+        function handleGenderClick(gender) {
+            selectedGender = gender;
+        }
+
+        function handleContinue() {
+            if (selectedGender) {
+                // Do something with the selected gender, e.g., send it to the server
+                console.log(`Selected Gender: ${selectedGender}`);
+
+                // Redirect or update state to proceed to the next step
+                // You can use window.location.href for navigation
+                // Example using window.location.href:
+                // window.location.href = '/next-page';
+            } else {
+                alert('Please select a gender before continuing.');
+            }
+        }
+    </script>
+</body>
+</html>

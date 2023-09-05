@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      body {
+        background-image: url("/img/image.jpeg");
+      }
+      form {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-bar" id="nav-bar">
+      <div class="topnav">
+        <a href="#">The Spark Foundation</a>
+        <div class="topnav-right">
+          <!-- <a class="active" href="index.ejs">Home</a> -->
+          <a href="contact.ejs">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <h1 style="color: white" align="center">Contact Us</h1>
+    <br />
+    <center>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name :</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          /><br /><br />
+          <label for="lname">Last Name :</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          /><br /><br />
+          <label for="country">Country :</label>
+          <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option></select
+          ><br /><br />
+
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 170px"
+          ></textarea
+          ><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </center>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <footer align="center" style="color: white">
+      <span
+        >Created By
+        <a
+          href="https://www.linkedin.com/in/bhavyapatamsetti/"
+          style="color: linen"
+          >Bhavya Patamsetti</a
+        >
+        | <span class="far fa-copyright"></span> 2022 All rights reserved.</span
+      >
+    </footer>
+  </body>
+</html>

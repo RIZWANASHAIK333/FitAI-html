@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Are You Wearing</title>
+    <link rel="stylesheet" type="text/css" href="fit.css">
+
+</head>
+<body>
+    <div class="wardrobe-container">
+        <div class="card">
+            <h2>What Are You Wearing</h2>
+            <!-- Commented out description since it's not dynamic in HTML -->
+            <!-- <p>Select an outfit from your wardrobe.</p> -->
+            <div class="wardrobe-options">
+                <div class="wardrobe-card" onclick="handleImageClick('image1')">
+                    <img src="right.jpg" alt="Outfit 1">
+                </div>
+                <div class="wardrobe-card" onclick="handleImageClick('image2')">
+                    <img src="tight.jpg" alt="Outfit 2">
+                </div>
+                <div class="wardrobe-card" onclick="handleImageClick('image3')">
+                    <img src="loose.jpg" alt="Outfit 3">
+                </div>
+            </div><br>
+            <a href="/entry" class="btn btn-primary" onclick="handleContinue()">
+                Continue
+            </a>
+        </div>
+    </div>
+    
+    <script>
+        // JavaScript code (equivalent to React logic) should be placed here
+        let selectedImage = '';
+
+        function handleImageClick(image) {
+            selectedImage = image;
+        }
+
+        function handleContinue() {
+            if (selectedImage) {
+                // Do something with the selected image, e.g., display a message
+                console.log(`Selected Image: ${selectedImage}`);
+
+                // Proceed to the next task or page
+                // You can use window.location.href for navigation
+                // Example using window.location.href:
+                // window.location.href = '/next-page';
+            } else {
+                alert('Please select an image before continuing.');
+            }
+        }
+    </script>
+</body>
+</html>
